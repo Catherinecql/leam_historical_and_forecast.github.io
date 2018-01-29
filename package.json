@@ -6,10 +6,13 @@
   "scripts": {
     "watch": "webpack -d --watch",
     "build": "webpack",
-    "dev": "webpack-dev-server --content-base public/ --history-api-fallback"
+    "dev": "webpack-dev-server --content-base public/ --history-api-fallback",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "author": "Simon Lu",
   "license": "ISC",
+  "homepage": "http://www.qinglinchen.com/leam_historical_and_forecast.github.io/",
   "devDependencies": {
     "autoprefixer": "^6.7.7",
     "babel-core": "^6.24.0",
@@ -28,6 +31,7 @@
   "dependencies": {
     "axios": "^0.16.2",
     "chart.js": "^1.1.1",
+    "gh-pages": "^1.1.0",
     "normalize.css": "^6.0.0",
     "react": "^15.4.2",
     "react-chartjs": "^1.2.0",
