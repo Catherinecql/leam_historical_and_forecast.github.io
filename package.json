@@ -12,7 +12,7 @@
   },
   "author": "Simon Lu",
   "license": "ISC",
-  "homepage": "http://www.qinglinchen.com/leam_historical_and_forecast.github.io/",
+  "homepage": "http://www.qinglinchen.com/",
   "devDependencies": {
     "autoprefixer": "^6.7.7",
     "babel-core": "^6.24.0",
