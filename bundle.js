@@ -19365,23 +19365,23 @@ var Home = function (_Component) {
                 null,
                 _react2.default.createElement(
                   _semanticUiReact.Table.HeaderCell,
-                  { className: 'TableName' },
+                  { width: 3, className: 'TableName' },
                   'Name'
                 ),
                 _react2.default.createElement(
                   _semanticUiReact.Table.HeaderCell,
-                  null,
+                  { width: 1 },
                   'Current_Employment(2016)'
                 ),
                 _react2.default.createElement(
                   _semanticUiReact.Table.HeaderCell,
-                  null,
+                  { width: 1 },
                   'Employment_Projection(2040)'
                 ),
                 _react2.default.createElement(
                   _semanticUiReact.Table.HeaderCell,
                   null,
-                  'Projection'
+                  'Trend From 2001 to 2040'
                 )
               )
             ),
@@ -19394,18 +19394,18 @@ var Home = function (_Component) {
                   null,
                   _react2.default.createElement(
                     _semanticUiReact.Table.Cell,
-                    { singleLine: true },
+                    { width: 3 },
                     item["name"]
                   ),
                   _react2.default.createElement(
                     _semanticUiReact.Table.Cell,
-                    null,
-                    item["data"][16]
+                    { width: 1 },
+                    item["data"][16].split('.')[0]
                   ),
                   _react2.default.createElement(
                     _semanticUiReact.Table.Cell,
-                    null,
-                    item["data"][38]
+                    { width: 1 },
+                    item["data"][38].split('.')[0]
                   ),
                   _react2.default.createElement(
                     _semanticUiReact.Table.Cell,
@@ -26179,7 +26179,7 @@ exports = module.exports = __webpack_require__(174)(undefined);
 
 
 // module
-exports.push([module.i, ".Home {\n  color: skyblue;\n  text-align: center;\n  position: absolute;\n  left: 50%;\n  -webkit-transform: translateX(-50%);\n          transform: translateX(-50%);\n  width: 100%; }\n\n.Search {\n  width: 50%;\n  margin: auto; }\n\n.Table {\n  margin-top: 20px; }\n\n.chart {\n  border: none;\n  width: 100%;\n  height: 150%; }\n", ""]);
+exports.push([module.i, ".Home {\n  color: skyblue;\n  text-align: center;\n  position: absolute;\n  left: 50%;\n  -webkit-transform: translateX(-50%);\n          transform: translateX(-50%);\n  width: 100%; }\n\n.Search {\n  width: 50%;\n  margin: auto; }\n\n.Table {\n  margin-top: 20px; }\n\n.chart {\n  border: none;\n  width: 100%;\n  height: 200%; }\n", ""]);
 
 // exports
 
