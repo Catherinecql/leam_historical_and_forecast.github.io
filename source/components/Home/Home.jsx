@@ -29,9 +29,9 @@ class Home extends Component {
     return(
       <div className="Home">
         <div className="Search">
-        <h1>Historical and Forecast Data Demo</h1>
+        <h1>Economic Projections</h1>
         <Dropdown
-          placeholder='State'
+          placeholder='Sector'
           fluid multiple search selection
           options={options}
           onChange={this.handleChange}
@@ -41,26 +41,26 @@ class Home extends Component {
           <Table celled padded>
             <Table.Header>
               <Table.Row>
-                <Table.HeaderCell className="TableName">Name</Table.HeaderCell>
-                <Table.HeaderCell>Current_Employment(2016)</Table.HeaderCell>
-                <Table.HeaderCell>Employment_Projection(2040)</Table.HeaderCell>
-                <Table.HeaderCell>Projection</Table.HeaderCell>
+                <Table.HeaderCell width={3} className="TableName">Name</Table.HeaderCell>
+                <Table.HeaderCell width={1}>Current_Employment(2016)</Table.HeaderCell>
+                <Table.HeaderCell width={1}>Employment_Projection(2040)</Table.HeaderCell>
+                <Table.HeaderCell>Trend From 2001 to 2040</Table.HeaderCell>
               </Table.Row>
             </Table.Header>
             <Table.Body>
             {data.map((item, i) => this.state.items.includes(item["name"]) ?
               <Table.Row>
-                <Table.Cell singleLine>
+                <Table.Cell  width={3}>
                   {item["name"]}
                 </Table.Cell>
-                <Table.Cell>
-                  {item["data"][16]}
+                <Table.Cell width={1}>
+                  {item["data"][16].split('.')[0]}
+                </Table.Cell>
+                <Table.Cell width={1}>
+                  {item["data"][38].split('.')[0]}
                 </Table.Cell>
                 <Table.Cell>
-                  {item["data"][38]}
-                </Table.Cell>
-                <Table.Cell>
-                  <iframe className="chart" src={`../../assets/${item["name"].split(' ').join('')}.html`}></iframe>
+                  <iframe className="chart" src={`/assets/${item["name"].split(' ').join('')}.html`}></iframe>
                 </Table.Cell>
               </Table.Row> : null
             )}
