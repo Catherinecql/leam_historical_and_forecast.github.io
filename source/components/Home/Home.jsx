@@ -31,7 +31,7 @@ class Home extends Component {
         <div className="Search">
         <h1>Historical and Forecast Data Demo</h1>
         <Dropdown
-          placeholder='State'
+          placeholder='Sector'
           fluid multiple search selection
           options={options}
           onChange={this.handleChange}
