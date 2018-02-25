@@ -19345,7 +19345,7 @@ var Home = function (_Component) {
             'Economic Projections'
           ),
           _react2.default.createElement(_semanticUiReact.Dropdown, {
-            placeholder: 'State',
+            placeholder: 'Sector',
             fluid: true, multiple: true, search: true, selection: true,
             options: _name2.default,
             onChange: this.handleChange
@@ -19410,7 +19410,7 @@ var Home = function (_Component) {
                   _react2.default.createElement(
                     _semanticUiReact.Table.Cell,
                     null,
-                    _react2.default.createElement('iframe', { className: 'chart', src: '/leam_historical_and_forecast.github.io/assets/' + item["name"].split(' ').join('') + '.html' })
+                    _react2.default.createElement('iframe', { className: 'chart', src: '/assets/' + item["name"].split(' ').join('') + '.html' })
                   )
                 ) : null;
               })

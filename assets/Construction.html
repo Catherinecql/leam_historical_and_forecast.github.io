@@ -17,7 +17,7 @@
     	if (this.readyState == 4 && this.status == 200) {
 			j_data = JSON.parse(this.responseText);
 			var x = j_data.x;
-			var y = j_data.y;
+			var y = j_data.y.map(Math.round);
 			var curYear = "2016";
 			var predIndex = x.indexOf(curYear);
 			var dat1 = y.slice(0,predIndex+1);
@@ -57,7 +57,7 @@
                 	responsive: true,
                 	title:{
                 	    display:true,
-                	    text:'Employmentation Trend'
+                	    text:'Economic Model'
                 	},
                 	tooltips: {
                 	    mode: 'index',
